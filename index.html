@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>扫雷</title>
+    <link href="css/game_mine.css" rel="stylesheet">
+    <script src="js/game_mine.js"></script>
+</head>
+<body>
+<h1>扫雷</h1>
+<div class="time_and_reset">
+    <div>
+        <p class="time">最短记录：</p><p class="time" id="shortest_time"></p><br/>
+        <p class="time">时间：</p><p class="time" id="time"></p>
+    </div>
+    <div>
+        <p class="flag_num">可放置旗子数：</p><p class="flag_num" id="flag_num"></p>
+    </div>
+    <div>
+        <button class="btn" id="reset_btn">重新开始</button>
+    </div>
+</div>
+<div class="main" id="main"></div>
+<div class="button" id="button">
+    <p>选择难度：</p>
+    <div class="level_div">
+        <button class="level_btn" id="left_btn"><</button>
+        <div class="level" id="level">简单</div>
+        <button class="level_btn" id="right_btn">></button>
+    </div>
+    <div>
+        <button class="btn" id="start_btn">开始游戏</button><br/>
+        <button class="btn" id="explain_btn">游戏说明</button>
+    </div>
+</div>
+<div class="explain" id="explain">
+    <p>鼠标左键点击打开方格，右键点击方格标记雷，或点击下方旗帜标记后再左键点击方格。</p><br/>
+    <button class="btn" id="return">返回</button>
+</div>
+<!--<div class="flag_btn" id="flag_btn"><img class="flag" id="flag" src="image/flag.jfif"></div>-->
+</body>
+</html>

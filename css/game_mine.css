@@ -1,0 +1,90 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.button,.explain{
+    background-color:#33A3DC;
+    width: 200px; height: 300px;
+    border-radius: 20px;margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.explain{
+    display: none;
+    position: relative;
+    top: -300px;
+}
+.btn{
+    width: 100px; height: 30px;
+    margin: 5px;
+}
+.level{
+    background-color: #FFFFFF;
+    width: 50px;height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.level_div{
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.time_and_reset{
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+div div p{
+    display: inline;
+}
+
+.lattice{
+    cursor: default;
+    text-indent: -9999px;
+    width: 20px;height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #33A3DC;
+    border: solid 1px #000000;
+    user-select: none;
+}
+.lattice:hover{
+    box-shadow: -2px -2px 2px inset;
+}
+.main{
+    position: relative;
+    background-color: #FFFFFF;
+    margin: 0px auto;
+}
+.bomb{
+    width: 85%;height: 80%;
+}
+@keyframes blast {
+    0%{transform: scale(0.8,0.8);}
+    50%{transform: scale(0.6,0.6);}
+    100%{transform: scale(1,1);}
+}
+.flag_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;height: 50px;
+    margin: 10px 50%;
+    background-color: #A1A3A6;
+}
+.flag_btn:hover{
+    /*background-color: #D3D7D4;*/
+    box-shadow: inset 60px 50px #D3D7D4;
+}
+.flag{
+    width: 80%;height: 80%;
+}
+.flag2{
+    width: 20px;height: 20px;
+}
+
+
